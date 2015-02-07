@@ -2,11 +2,11 @@ Based on android's repo script
 
 Mirror tree
 └── repo-template-mirror
-    ├── git-repo.git  -- repo tool project
+    ├── git-repo.git  -- repo tool project, https://github.com/venus-solar/git-repo.git
     ├── platform
-    │   ├── manifest.git -- manifest mirror
-    │   └── test.git -- project mirror
-    └── repo.git  -- repo script
+    │   ├── manifest.git -- manifest mirror https://github.com/venus-solar/manifest.git
+    │   └── test.git -- project mirror https://github.com/venus-solar/test.git
+    └── repo.git  -- repo script https://github.com/venus-solar/repo.git
 
 Projects tree
 └── repo-projects
