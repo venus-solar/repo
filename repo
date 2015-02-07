@@ -2,7 +2,7 @@
 
 ## repo default configuration
 ##
-REPO_URL = 'https://gerrit.googlesource.com/git-repo'
+REPO_URL = 'https://github.com/venus-solar/git-repo.git'
 REPO_REV = 'stable'
 
 # Copyright (C) 2008 Google Inc.
@@ -257,19 +257,9 @@ def _Init(args):
 
   _CheckGitVersion()
   try:
-    if NeedSetupGnuPG():
-      can_verify = SetupGnuPG(opt.quiet)
-    else:
-      can_verify = True
-
     dst = os.path.abspath(os.path.join(repodir, S_repo))
     _Clone(url, dst, opt.quiet)
-
-    if can_verify and not opt.no_repo_verify:
-      rev = _Verify(dst, branch, opt.quiet)
-    else:
-      rev = 'refs/remotes/origin/%s^0' % branch
-
+    rev = 'refs/remotes/origin/%s^0' % branch
     _Checkout(dst, branch, rev, opt.quiet)
   except CloneFailure:
     if opt.quiet:
