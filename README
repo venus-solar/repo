@@ -1,1 +1,22 @@
 Based on android's repo script
+
+Mirror tree
+└── repo-template-mirror
+    ├── git-repo.git  -- repo tool project
+    ├── platform
+    │   ├── manifest.git -- manifest mirror
+    │   └── test.git -- project mirror
+    └── repo.git  -- repo script
+
+Projects tree
+└── repo-projects
+    ├── Makefile -- project file (controlled by manifest copy command)
+    ├── .repo -- repo data folder
+    │   ├── manifests -- manifest project
+    │   ├── manifests.git
+    │   ├── project-objects
+    │   ├── projects
+    │   └── repo -- repo tool
+    └── test -- test project
+        ├── .git
+        └── test_folder
