@@ -2,7 +2,8 @@
 
 ## repo default configuration
 ##
-REPO_URL = 'https://github.com/venus-solar/git-repo.git'
+#REPO_URL = 'https://github.com/venus-solar/git-repo.git'
+REPO_URL = '~/Mirror/repo-template-mirror/git-repo.git'
 REPO_REV = 'stable'
 
 # Copyright (C) 2008 Google Inc.
